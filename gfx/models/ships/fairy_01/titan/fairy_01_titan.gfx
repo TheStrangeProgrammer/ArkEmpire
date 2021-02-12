@@ -1,0 +1,264 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_titan_mesh"
+		file = "gfx/models/ships/fairy_01/titan/fairy_01_titan.mesh"
+		scale = 1.0
+
+		animation = { id = "idle" type = "fairy_01_titan_idle_animation" }
+		animation = { id = "clossing" type = "fairy_01_titan_clossing_animation" }
+
+		meshsettings = {
+			name = "titan:Object8457Shape"
+			index = 0
+			texture_diffuse = "titan_armor_01.dds"
+			texture_normal = "titan_armor_01_normal.dds"
+			texture_specular = "titan_armor_01_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8458Shape"
+			index = 0
+			texture_diffuse = "titan_armor_02.dds"
+			texture_normal = "titan_armor_02_normal.dds"
+			texture_specular = "titan_armor_02_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8456Shape"
+			index = 0
+			texture_diffuse = "titan_hull.dds"
+			texture_normal = "titan_hull_norm.dds"
+			texture_specular = "titan_hull_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8463Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8464Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8465Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8466Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8467Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8468Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8469Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8470Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8461Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8462Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8459Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8460Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8463Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8464Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8465Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8466Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8467Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8468Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8469Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8470Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8461Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8462Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8459Shape"
+			index = 0
+			texture_diffuse = "titan_gun.dds"
+			texture_normal = "titan_gun_norm.dds"
+			texture_specular = "titan_gun_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Object8460Shape"
+			index = 0
+			texture_diffuse = "titan_gun_out.dds"
+			texture_normal = "titan_gun_out_norm.dds"
+			texture_specular = "titan_gun_out_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_titan_frame_mesh"
+		file = "gfx/models/ships/fairy_01/titan/fairy_01_titan_frame.mesh"
+		scale = 1.0
+
+		animation = { id = "idle" type = "fairy_01_titan_frame_idle_animation" }
+		animation = { id = "clossing" type = "fairy_01_titan_frame_clossing_animation" }
+	}
+}

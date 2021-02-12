@@ -1,0 +1,28 @@
+ae_trait_arkship_origin = {
+	leader_age_min = 18
+	leader_age_max = 20
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+	}
+	
+	potential_crossbreeding_chance = 0
+	modifier = {
+		army_defense_damage_mult = 1
+		army_defense_health_mult = 1
+		army_defense_morale_mult = 1
+		army_collateral_damage_mult = -1
+		armies_cost_mult = 2
+		armies_upkeep_mult = -0.25
+		pop_growth_speed = -0.5
+		leader_age = 250
+		leader_skill_levels = 5
+		species_leader_exp_gain = 0.5
+		}
+}
+

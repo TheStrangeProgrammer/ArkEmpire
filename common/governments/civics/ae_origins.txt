@@ -1,0 +1,19 @@
+ae_origin_arkships = {
+	is_origin = yes
+	icon = gfx/interface/icons/origins/origins_alderson_disk.dds
+	picture = GFX_origin_alderson
+	starting_colony = pc_gaia
+	description = origin_alderson_effects
+	habitability_preference = pc_gaia
+	preferred_planet_class_neighbor = no
+	initializers = {
+		ae_basic_system
+	}
+	flags = {
+		custom_start_screen
+	}
+	traits = {
+		trait = ae_trait_arkship_origin
+
+	}
+}

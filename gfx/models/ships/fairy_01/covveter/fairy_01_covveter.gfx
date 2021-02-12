@@ -1,0 +1,34 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_covveter_mesh"
+		file = "gfx/models/ships/fairy_01/covveter/fairy_01_covveter.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "covvete:Object2993Shape"
+			index = 0
+			texture_diffuse = "medium_Quadtur_diffuse.dds"
+			texture_normal = "medium_Quadtur_normal.dds"
+			texture_specular = "medium_Quadtur_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "covvete:Box1812Shape"
+			index = 0
+			texture_diffuse = "Covveter_hull_diffuse.dds"
+			texture_normal = "Covveter_hull_normal.dds"
+			texture_specular = "Covveter_hull_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "covvete:Object2987Shape"
+			index = 0
+			texture_diffuse = "small_AAtur_diffuse.dds"
+			texture_normal = "small_AAtur_normal.dds"
+			texture_specular = "small_AAtur_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

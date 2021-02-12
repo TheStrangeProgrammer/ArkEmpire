@@ -1,0 +1,8 @@
+ae_on_arkship_built = {
+	$ship$ = {
+		
+	}
+}
+
+ae_on_arkship_destroyed = {
+}

@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_crusier_mesh"
+		file = "gfx/models/ships/fairy_01/crusier/fairy_01_crusier.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "cruiser:Object2951Shape"
+			index = 0
+			texture_diffuse = "CruiserTripleTur_diffuse.dds"
+			texture_normal = "CruiserTripleTur_normal.dds"
+			texture_specular = "CruiserTripleTur_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "cruiser:Object2988Shape"
+			index = 0
+			texture_diffuse = "Cruiser_diffuse.dds"
+			texture_normal = "Cruiser_normal.dds"
+			texture_specular = "Cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

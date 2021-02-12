@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_dreadnought_mesh"
+		file = "gfx/models/ships/fairy_01/dreadnought/fairy_01_dreadnought.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "dreadnought:Object15141Shape"
+			index = 0
+			texture_diffuse = "dreadnought_diffuse.dds"
+			texture_normal = "dreadnought_normal.dds"
+			texture_specular = "dreadnought_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "dreadnought:Object15188Shape"
+			index = 0
+			texture_diffuse = "Maincannon_diffuse.dds"
+			texture_normal = "Maincannon_normal.dds"
+			texture_specular = "Maincannon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

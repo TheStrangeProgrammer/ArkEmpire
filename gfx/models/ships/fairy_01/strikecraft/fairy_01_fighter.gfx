@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_fighter_mesh"
+		file = "gfx/models/ships/fairy_01/strikecraft/fairy_01_fighter.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "fighter:Object14460Shape"
+			index = 0
+			texture_diffuse = "fighter_diffuse.dds"
+			texture_normal = "fighter_normal.dds"
+			texture_specular = "fighter_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_juggernart_frame_mesh"
+		file = "gfx/models/ships/fairy_01/juggernart/fairy_01_juggernart_frame.mesh"
+		scale = 1.0
+	}
+}

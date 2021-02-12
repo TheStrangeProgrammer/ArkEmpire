@@ -1,0 +1,44 @@
+entity = {
+	name = "fairy_01_fighter_entity"	
+	pdxmesh = "fairy_01_fighter_mesh"
+	scale = 0.6
+	
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+entity = {
+	name = "fairy_01_bomber_entity"	
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { -90 0 0 } }
+	scale = 1
+	
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+
+	attach = { part1 = "fairy_01_bomber_true_entity" }
+}
+
+entity = {
+	name = "fairy_01_bomber_true_entity"	
+	pdxmesh = "fairy_01_bordment_mesh"
+	scale = 0.6
+	
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+
+
+entity = {
+	name = "fairy_01_droppod_entity"	
+	pdxmesh = "fairy_01_bordment_mesh"
+	scale = 0.85
+	
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}

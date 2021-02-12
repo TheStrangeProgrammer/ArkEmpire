@@ -1,0 +1,24 @@
+ae_civic_arkships = {
+	icon = gfx/interface/icons/governments/civics/civic_final_defense_protocols.dds
+	potential = {
+		origin = {
+			value = ae_origin_arkships
+		}
+	}
+	possible = {
+		origin = {
+			value = ae_origin_arkships
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 0
+		modifier = {
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	modifier = {
+		
+	}
+}

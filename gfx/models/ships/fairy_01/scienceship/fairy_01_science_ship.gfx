@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_science_ship_mesh"
+		file = "gfx/models/ships/fairy_01/scienceship/fairy_01_science_ship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "scienceship:Object3003Shape"
+			index = 0
+			texture_diffuse = "scienceship_hull_diffuse.dds"
+			texture_normal = "scienceship_hull_normal.dds"
+			texture_specular = "scienceship_hull_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

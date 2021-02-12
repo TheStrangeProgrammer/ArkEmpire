@@ -1,0 +1,332 @@
+##########################
+### FORMATION PRIORITY ###
+##########################
+@corvette_formation = 1
+@destroyer_formation = 2
+@cruiser_formation = 3
+@strikecruiser_formation = 4
+@battlecruiser_formation = 5
+@battleship_formation = 6
+@dreadnought_formation = 7
+@titan_formation = 8
+@flagship_formation = 9
+@carrier_formation = 11
+@escortcarrier_formation = 10
+
+#############
+### SPEED ###
+#############
+@speed0 = 0
+@speed1 = 6
+@speed2 = 80	# speed_slow
+@speed3 = 90
+@speed4 = 100	# speed_default
+@speed5 = 120	# speed_fast
+@speed6 = 130
+@speed7 = 140
+@speed8 = 160
+@speed9 = 170	# speed_very_fast
+@speed10 = 180
+
+####################
+### ACCELERATION ###
+####################
+@acceleration0 = 0
+@acceleration1 = 0.2
+@acceleration2 = 0.25
+@acceleration3 = 0.3
+@acceleration4 = 0.35
+@acceleration5 = 0.6
+@acceleration6 = 0.9
+@acceleration7 = 10
+
+######################
+### ROTATION SPEED ###
+######################
+@rotation0 = 0
+@rotation1 = 0.1
+@rotation2 = 0.15
+@rotation3 = 0.16
+@rotation4 = 0.175
+@rotation5 = 0.2
+@rotation6 = 5
+@rotation7 = 10
+
+########################
+### COLLISION RADIUS ###
+########################
+@corvette_collision = 2
+@destroyer_collision = 2.5
+@cruiser_collision = 3.5
+@battlecruiser_collision = 6
+@battleship_collision = 6
+@carrier_collision = 9
+@dreadnought_collision = 9
+@escortcarrier_collision = 10
+@titan_collision = 12
+@flagship_collision = 0
+
+##########################
+### BUILD BLOCK RADIUS ###
+##########################
+@block_radius_none = 0
+@block_radius_civilian = 20
+@block_radius_military = 200
+
+##############
+### Health ###
+##############
+ae_arkship_producer = {
+	graphical_culture = no
+	entity = "lithoid_01_meteor_colonyship_entity"
+	formation_priority = @titan_formation
+	max_speed = @speed3
+	acceleration = @acceleration1
+	rotation_speed = @rotation2
+	collision_radius = @titan_collision
+	
+	modifier = {
+		ship_evasion_add = 2
+		ship_piracy_suppression_add = 2
+		starbase_shipyard_capacity_add = 1
+	}
+	
+	max_hitpoints = 20000
+	size_multiplier = 18
+	fleet_slot_size = 18
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	icon_frame = 6
+	base_buildtime = 1300
+	combat_disengage_chance = 1.0
+	
+	is_space_station = no
+	can_have_federation_design = yes
+	enable_default_design = yes
+	default_behavior = artillery
+	
+	potential_construction = {
+		
+	}
+
+	possible_construction = {
+		
+	}
+	
+	prerequisites = {  }
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	
+	empire_limit = {
+		base = 1
+		max = 999
+		naval_cap_div = 100
+	}
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 4.8
+			alloys = 1.6
+		}
+	}
+	min_upgrade_cost = { alloys = 16 }
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "nsc_titan_aura"
+}
+ae_arkship_tanker = {
+	graphical_culture = no
+	entity = "lithoid_01_meteor_colonyship_entity"
+	formation_priority = @titan_formation
+	max_speed = @speed3
+	acceleration = @acceleration1
+	rotation_speed = @rotation2
+	collision_radius = @titan_collision
+	
+	modifier = {
+		ship_evasion_add = 2
+		ship_piracy_suppression_add = 2
+		starbase_shipyard_capacity_add = 1
+	}
+	
+	max_hitpoints = 20000
+	size_multiplier = 18
+	fleet_slot_size = 18
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	icon_frame = 6
+	base_buildtime = 1300
+	combat_disengage_chance = 1.0
+	
+	is_space_station = no
+	can_have_federation_design = yes
+	enable_default_design = yes
+	default_behavior = artillery
+	
+	potential_construction = {
+		
+	}
+
+	possible_construction = {
+		
+	}
+	
+	prerequisites = {  }
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	
+	empire_limit = {
+		base = 1
+		max = 999
+		naval_cap_div = 100
+	}
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 4.8
+			alloys = 1.6
+		}
+	}
+	min_upgrade_cost = { alloys = 16 }
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "nsc_titan_aura"
+}
+ae_arkship_shipyard = {
+	graphical_culture = no
+	entity = "lithoid_01_meteor_colonyship_entity"
+	formation_priority = @titan_formation
+	max_speed = @speed3
+	acceleration = @acceleration1
+	rotation_speed = @rotation2
+	collision_radius = @titan_collision
+	
+	modifier = {
+		ship_evasion_add = 2
+		ship_piracy_suppression_add = 2
+		starbase_shipyard_capacity_add = 1
+	}
+	
+	max_hitpoints = 20000
+	size_multiplier = 18
+	fleet_slot_size = 18
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	icon_frame = 6
+	base_buildtime = 1300
+	combat_disengage_chance = 1.0
+	
+	is_space_station = no
+	can_have_federation_design = yes
+	enable_default_design = yes
+	default_behavior = artillery
+	
+	potential_construction = {
+		
+	}
+
+	possible_construction = {
+		
+	}
+	
+	prerequisites = {  }
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	
+	empire_limit = {
+		base = 1
+		max = 999
+		naval_cap_div = 100
+	}
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 4.8
+			alloys = 1.6
+		}
+	}
+	min_upgrade_cost = { alloys = 16 }
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
+	required_component_set = "nsc_titan_aura"
+}
+ae_arkship_colony = {
+	graphical_culture = no
+	entity = strg_01_colonizer_entity
+	formation_priority = @titan_formation
+	max_speed = @speed3
+	acceleration = @acceleration1
+	rotation_speed = @rotation2
+	collision_radius = @titan_collision
+	
+	modifier = {
+		ship_evasion_add = 2
+		ship_piracy_suppression_add = 2
+	}
+	
+	max_hitpoints = 20000
+	size_multiplier = 32
+	fleet_slot_size = 32
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	icon_frame = 6
+	base_buildtime = 1300
+	combat_disengage_chance = 1.0
+	
+	is_space_station = no
+	can_have_federation_design = yes
+	enable_default_design = yes
+	default_behavior = artillery
+	
+	potential_construction = {
+		owner = { has_origin = ae_origin_arkships }
+	}
+
+	possible_construction = {
+		owner = { has_origin = ae_origin_arkships }
+	}
+	
+	prerequisites = {  }
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	
+	
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 4.8
+			alloys = 1.6
+		}
+	}
+	min_upgrade_cost = { alloys = 16 }
+
+
+}

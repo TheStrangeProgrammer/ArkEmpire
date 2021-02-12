@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_destroyer_mesh"
+		file = "gfx/models/ships/fairy_01/destroyer/fairy_01_destroyer.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "destroyed:Object2978Shape"
+			index = 0
+			texture_diffuse = "medium_Quadtur_diffuse.dds"
+			texture_normal = "medium_Quadtur_normal.dds"
+			texture_specular = "medium_Quadtur_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "destroyed:Box1811Shape"
+			index = 0
+			texture_diffuse = "destroyer_hull_diffuse.dds"
+			texture_normal = "destroyer_hull_normal.dds"
+			texture_specular = "destroyer_hull_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

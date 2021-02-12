@@ -1,0 +1,43 @@
+namespace = ae_starting_events
+country_event = {
+	id = ae_starting_events.001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = ae_origin_arkships
+	}
+	immediate = {
+		set_country_type = ae_arkempire
+		no_scope = {
+			spawn_system = {
+				initializer = ae_arkship_system_initializer
+				min_distance = 580
+				max_distance = 600
+				is_discovered = yes
+				hyperlane = no
+			}
+			last_created_system = {
+				set_star_flag = ae_system_flag_@ROOT
+			}
+		}
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				create_ship = {
+					name = random
+					random_existing_design = ae_arkship_colony
+				}
+				set_fleet_stance = evasive
+				set_location = prev.capital_star
+				last_created_ship = {
+					ship_event = {
+						id = ae_arkship_events.201
+					}
+				}
+			}
+		}
+		capital_scope = {
+			destroy_colony = yes
+		}
+	}
+}

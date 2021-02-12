@@ -1,0 +1,43 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_translation_ship_mesh"
+		file = "gfx/models/ships/fairy_01/transportship/fairy_01_translation_ship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "tran:Object4918Shape"
+			index = 0
+			texture_diffuse = "transportship_link_diffuse.dds"
+			texture_normal = "transportship_link_normal.dds"
+			texture_specular = "transportship_link_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "tran:Object4932Shape"
+			index = 0
+			texture_diffuse = "transportship_Island_diffuse.dds"
+			texture_normal = "transportship_Island_normal.dds"
+			texture_specular = "transportship_Island_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "tran:Object4927Shape"
+			index = 0
+			texture_diffuse = "transportship_engine_diffuse.dds"
+			texture_normal = "transportship_engine_normal.dds"
+			texture_specular = "transportship_engine_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "tran:Object4923Shape"
+			index = 0
+			texture_diffuse = "transportship_hull_box_diffuse.dds"
+			texture_normal = "transportship_hull_box_normal.dds"
+			texture_specular = "transportship_hull_box_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

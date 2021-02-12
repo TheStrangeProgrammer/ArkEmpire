@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_battlecrusier_mesh"
+		file = "gfx/models/ships/fairy_01/battlecrusier/fairy_01_battlecrusier.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "battlecursier:Object11805Shape"
+			index = 0
+			texture_diffuse = "Triple_mainturrert_diffuse.dds"
+			texture_normal = "Triple_mainturrert_normal.dds"
+			texture_specular = "Triple_mainturrert_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "battlecursier:Object11770Shape"
+			index = 0
+			texture_diffuse = "battlecrusier_hull_diffuse.dds"
+			texture_normal = "battlecrusier_hull_normal.dds"
+			texture_specular = "battlecrusier_hull_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

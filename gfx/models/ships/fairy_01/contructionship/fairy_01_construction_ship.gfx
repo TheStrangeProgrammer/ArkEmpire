@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_construction_ship_mesh"
+		file = "gfx/models/ships/fairy_01/contructionship/fairy_01_construction_ship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "construction:MeshShape"
+			index = 0
+			texture_diffuse = "contructionship_diffuse.dds"
+			texture_normal = "contructionship_normal.dds"
+			texture_specular = "contructionship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

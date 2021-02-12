@@ -1,0 +1,15 @@
+on_game_start_country = {
+	events = {
+		ae_starting_events.001
+	}
+}
+on_ship_built = {
+	events = {
+		ae_arkship_events.100
+	}
+}
+on_monthly_pulse = {
+	events = {
+	ae_arkship_events.200
+	}
+}

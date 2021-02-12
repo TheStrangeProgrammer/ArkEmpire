@@ -1,0 +1,122 @@
+namespace = ae_arkship_events
+country_event = {
+	id = ae_arkship_events.001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = ae_origin_arkships
+	}
+	immediate = {
+	}
+}
+
+event = {
+	id = ae_arkship_events.010
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ship_size = ae_arkship_colony
+	}
+	immediate = {
+		FROMFROM = {
+			THIS = {
+				auto_move_to_planet = {
+					target = PREVPREV
+					clear_auto_move_on_arrival = yes
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = ae_arkship_events.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ship_size = ae_arkship_colony
+	}
+	immediate = {
+		ship_event = {
+			id = ae_arkship_events.201
+		}
+	}
+}
+
+event = {
+	id = ae_arkship_events.200
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			limit = {
+				has_origin = ae_origin_arkships
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_size = ae_arkship_colony
+				}
+				prev = {
+					every_owned_planet = {
+						limit = {
+							AND = {
+								is_planet_class = ae_pc_arkship
+								has_planet_flag = ae_planet_ship_link_flag_@PREVPREV
+							}
+						}
+						set_planet_flag = ae_arkship_exists
+					}
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = ae_system_flag_@PREV
+				}
+				every_system_planet = {
+					limit = {
+						NOT = {
+							has_planet_flag = ae_arkship_exists
+						}
+					}
+					remove_planet = yes
+				}
+				every_system_planet = {
+					limit = {
+						has_planet_flag = ae_arkship_exists
+					}
+					remove_planet_flag = ae_arkship_exists
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = ae_arkship_events.201
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_ship_flag = ae_planet_ship_link_flag_@ROOT
+		fleet = {
+			no_scope = {
+				random_system = {
+					limit = {
+						has_star_flag = ae_system_flag_@ROOT.OWNER
+					}
+					spawn_planet = {
+						class = ae_pc_arkship
+						size = 15
+						orbit_angle_offset = 1
+						orbit_distance_offset = 1
+						init_effect = {
+							create_colony = {
+								owner = ROOT.OWNER
+							}
+							set_planet_flag = ae_planet_ship_link_flag_@ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+}
